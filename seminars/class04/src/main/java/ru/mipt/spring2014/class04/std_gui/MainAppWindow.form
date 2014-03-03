@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="menuBar">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="fileMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="102"/>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="openMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="111"/>
+                <Property name="text" type="java.lang.String" value="Open"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="saveMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="115"/>
+                <Property name="text" type="java.lang.String" value="Save"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="saveAsMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="97"/>
+                <Property name="text" type="java.lang.String" value="Save As ..."/>
+                <Property name="displayedMnemonicIndex" type="int" value="5"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="exitMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="120"/>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="exitMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="editMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="101"/>
+            <Property name="text" type="java.lang.String" value="Edit"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="cutMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="116"/>
+                <Property name="text" type="java.lang.String" value="Cut"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="copyMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="121"/>
+                <Property name="text" type="java.lang.String" value="Copy"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="pasteMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="112"/>
+                <Property name="text" type="java.lang.String" value="Paste"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="deleteMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="100"/>
+                <Property name="text" type="java.lang.String" value="Delete"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="helpMenu">
+          <Properties>
+            <Property name="mnemonic" type="int" value="104"/>
+            <Property name="text" type="java.lang.String" value="Help"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="contentsMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="99"/>
+                <Property name="text" type="java.lang.String" value="Contents"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="aboutMenuItem">
+              <Properties>
+                <Property name="mnemonic" type="int" value="97"/>
+                <Property name="text" type="java.lang.String" value="About"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="aboutMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="menuBar"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="jScrollPane1" pref="380" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="223" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Right Button"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Left Button"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calibri" size="12" style="0"/>
+            </Property>
+            <Property name="lineWrap" type="boolean" value="true"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in eros ac lacus faucibus porta non ut ipsum. Fusce nec pulvinar sem. Integer bibendum, enim in euismod pharetra, diam velit varius sem, ultrices auctor libero sapien nec augue. Quisque lacus sapien, aliquam eget condimentum ac, tincidunt sit amet nibh. Sed at varius mi. Aliquam euismod leo vitae magna ullamcorper convallis. Etiam sit amet suscipit dui. Duis cursus dignissim nulla, vitae volutpat purus pharetra et. In elit nibh, ultricies nec venenatis nec, ullamcorper id enim. Sed in hendrerit lorem. Nulla et lacus vitae risus volutpat pharetra. Suspendisse quis velit elit. Sed fermentum tortor a odio varius gravida. Aenean laoreet sapien eget eros suscipit interdum. &#xa;&#xa;Proin nec sem quis ligula suscipit aliquam. Donec quis nisi ut dui egestas mattis quis non erat. Maecenas tristique arcu eu quam accumsan pretium. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In elementum iaculis quam cursus molestie. Aliquam bibendum, purus at consectetur fringilla, ligula ligula consequat lacus, vitae dignissim nisl nisi vitae metus. Donec rhoncus lacus volutpat tellus facilisis pretium. Suspendisse convallis massa nec leo tincidunt ornare convallis mi consectetur. Duis sed aliquam elit. Maecenas faucibus mauris quis velit volutpat adipiscing nec id purus. Maecenas sodales neque enim, sit amet pretium magna. Cras tortor lorem, egestas vitae volutpat et, placerat ut dolor. Integer ultrices eros id libero sollicitudin imperdiet a nec velit. Morbi in dolor vitae massa fermentum dictum. &#xa;&#xa;Donec in quam magna, sit amet condimentum tellus. Aliquam ornare felis at sem rhoncus molestie at vel lectus. Fusce tincidunt adipiscing sem. Phasellus non dui ut leo venenatis scelerisque. Ut blandit aliquet lorem ac luctus. Donec mattis suscipit urna sit amet suscipit. Suspendisse potenti. Nam feugiat blandit eros ornare molestie. Fusce egestas mi sed nunc fermentum porta. Nam a sem eu ipsum eleifend tempus ac nec orci. Curabitur ultrices, neque sit amet scelerisque sodales, quam orci gravida dolor, eu tincidunt velit felis fringilla orci. Curabitur sagittis placerat neque, at elementum metus porta vel. Quisque aliquam viverra nisl, vel ornare quam faucibus ac. Ut nec blandit nulla. &#xa;&#xa;Vestibulum vel magna lectus. Nullam lacinia urna ac leo ullamcorper at scelerisque elit molestie. Pellentesque vehicula tortor eget risus gravida adipiscing. Sed sed ligula quis tortor sollicitudin eleifend ut eget nisi. Praesent enim magna, scelerisque sed consequat at, viverra at nunc. Integer sit amet malesuada orci. Donec fermentum bibendum erat egestas pretium. Sed dui elit, suscipit eu suscipit aliquet, ultrices eget libero. Vestibulum mollis sodales velit, consequat tempus purus condimentum ac. Ut quis ligula in tellus bibendum porttitor. Cras fringilla libero a diam tristique luctus. Integer vel mauris eget massa bibendum congue. Donec pharetra, arcu nec condimentum euismod, metus sem posuere magna, at imperdiet velit purus sit amet justo. &#xa;&#xa;Nullam vel rutrum ante. Sed non suscipit purus. Proin dignissim rhoncus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent neque nibh, blandit nec iaculis et, fermentum ut elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed rutrum magna in nunc consequat faucibus. Cras tincidunt pulvinar nunc in mattis. Donec ut porttitor est. Morbi suscipit elementum libero, nec porttitor magna commodo ut. Nam scelerisque posuere felis at malesuada. Morbi elementum augue id orci lacinia in bibendum sapien dictum. In varius, orci non volutpat gravida, elit enim aliquet turpis, in commodo quam leo sit amet dui. Etiam vel interdum lorem."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
