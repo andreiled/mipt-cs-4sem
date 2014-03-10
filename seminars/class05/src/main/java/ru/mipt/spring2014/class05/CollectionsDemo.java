@@ -6,6 +6,7 @@ package ru.mipt.spring2014.class05;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -19,9 +20,14 @@ public class CollectionsDemo
 		listOfStrings.add ("Str1");
 		listOfStrings.add ("Str2");
 		listOfStrings.add ("str3");
+		listOfStrings.add ("aaa");
 		System.out.println ("listOfStrings = " + listOfStrings);
+		System.out.println ("listOfStrings[1] = " + listOfStrings.get (1));
 		final Collection<String> stillList = listOfStrings;
 		System.out.println ("stillList = " + stillList);
+		System.out.println ("listOfStrings == stillList: " + (listOfStrings == stillList));
+		Collections.sort (listOfStrings);
+		System.out.println ("listOfStrings.sorted = " + listOfStrings);
 
 		final Set<String> setOfStrings = new HashSet<> ();
 		setOfStrings.add ("Str1");
