@@ -38,11 +38,11 @@ public class ImageMover extends Thread
 		return new Point (position);
 	}
 
-	private Point calculateNewPosition ()
+	private Point calculateNewPosition (long dTime)
 	{
 		Point newPos = new Point (position);
-		newPos.x += vx;
-		newPos.y += vy;
+		newPos.x += vx * dTime / 10;
+		newPos.y += vy * dTime / 10;
 		if (newPos.x < 0)
 		{
 			newPos.x = -newPos.x;
@@ -66,23 +66,26 @@ public class ImageMover extends Thread
 		return newPos;
 	}
 
-	public synchronized void stepOver ()
+	public synchronized void stepOver (long dTime)
 	{
 		if (width == 0 || height == 0 || Math.abs (vx) >= width || Math.abs (vy) >= height)
 		{
 			return;
 		}
 
-		position = calculateNewPosition ();
+		position = calculateNewPosition (dTime);
 		component.repaint ();
 	}
 
 	@Override
 	public void run ()
 	{
+        long time = System.currentTimeMillis();
 		while (!Thread.interrupted ())
 		{
-			stepOver ();
+            long newTime = System.currentTimeMillis();
+			stepOver (newTime - time);
+            time = newTime;
 			try{
 				Thread.sleep (20L);
 			} catch (InterruptedException e)
