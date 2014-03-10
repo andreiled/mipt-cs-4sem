@@ -80,12 +80,12 @@ public class ImageMover extends Thread
 	@Override
 	public void run ()
 	{
-        long time = System.currentTimeMillis();
+		long time = System.currentTimeMillis ();
 		while (!Thread.interrupted ())
 		{
-            long newTime = System.currentTimeMillis();
+			long newTime = System.currentTimeMillis ();
 			stepOver (newTime - time);
-            time = newTime;
+			time = newTime;
 			try{
 				Thread.sleep (20L);
 			} catch (InterruptedException e)
