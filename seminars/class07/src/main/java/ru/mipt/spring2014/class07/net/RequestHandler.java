@@ -23,6 +23,8 @@ public class RequestHandler implements Runnable
 	public void run ()
 	{
 		try{
+			connection.setTcpNoDelay (true);
+
 			final ObjectInputStream in = new ObjectInputStream (new BufferedInputStream (connection.getInputStream ()));
 			final ObjectOutputStream out = new ObjectOutputStream (new BufferedOutputStream (connection.getOutputStream ()));
 
