@@ -52,6 +52,16 @@ public class FieldView extends javax.swing.JPanel
 		return (int) Math.round (viewBounds.getY () + viewBounds.getHeight () - y / field.getHeight () * viewBounds.getHeight ());
 	}
 
+	private double getXFieldCoord (FieldModel field, int x)
+	{
+		return (x - viewBounds.getX ()) * field.getWidth () / viewBounds.getWidth ();
+	}
+
+	private double getYFieldCoord (FieldModel field, int y)
+	{
+		return (viewBounds.getY () + viewBounds.getHeight () - y) * field.getHeight () / viewBounds.getHeight ();
+	}
+
 	private void drawBorder (Graphics2D graphics)
 	{
 		graphics.setColor (Color.BLACK);
@@ -141,7 +151,17 @@ public class FieldView extends javax.swing.JPanel
 
     private void formMouseClicked(java.awt.event.MouseEvent evt)//GEN-FIRST:event_formMouseClicked
     {//GEN-HEADEREND:event_formMouseClicked
-        // TODO add your handling code here:
+		final FieldModel field = backend.getCurrentState ();
+		final double x = getXFieldCoord (field, evt.getX ()), y = getYFieldCoord (field, evt.getY ());
+		System.out.println ("Hit at (" + x + ", " + y + ")");
+		final Ball ball = field.findBall (x, y);
+		if (ball != null)
+		{
+			final Ball newBall = ball.copyBase ();
+			newBall.setPosition (ball.getX (), ball.getY ());
+			newBall.setVelocity (2 * (Math.random () - 0.5), 2 * (Math.random () - 0.5));
+			backend.changeBall (newBall);
+		}
     }//GEN-LAST:event_formMouseClicked
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

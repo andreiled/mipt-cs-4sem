@@ -54,4 +54,17 @@ public class FieldModel
 		assert (ball.getId () == balls.size ());
 		balls.add (ball);
 	}
+
+	public Ball findBall (double x, double y)
+	{
+		for (Ball ball : balls)
+		{
+			if ((x - ball.getX ()) * (x - ball.getX ())
+					+ (y - ball.getY ()) * (y - ball.getY ()) < ball.getR () * ball.getR ())
+			{
+				return ball;
+			}
+		}
+		return null;
+	}
 }
